@@ -47,6 +47,28 @@
     min-height: 800px;
 }
 
+.debug .footer-top > .container {
+    min-height: 500px;
+}
+.debug .footer-top .col-small {
+    background-color: #f08080;
+}
+.debug .footer-top .col-big {
+    background-color: #20b2aa;
+}
+.debug .footer-top .col-big > .col-inner {
+    border: 1px dashed #fff;
+}
+.debug .footer-bottom > .container {
+    background-color: #7fffd4;
+}
+
+.debug .footer-bottom .logo,
+.debug .footer-bottom .btn {
+    border: 1px dashed black;
+    background-color: #ffb6c1;
+}
+
 /*-----------
     GENERAL
 ------------*/
@@ -124,9 +146,53 @@ section > .container {
     display: flex;
 }
 
-.col-big {
+section .col-big {
     width: 60%;
 }
-.col-small {
+section .col-small {
     width: 40%;
+}
+
+/*-----------
+    FOOTER
+------------*/
+footer {
+    background-color: #23272a;
+}
+
+.footer-top {
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+
+.footer-top > .container {
+    display: flex;
+}
+
+.footer-top .col-small {
+    width: 30%;
+}
+.footer-top .col-big {
+    width: 70%;
+    display: flex;
+}
+
+.footer-top .col-big > .col-inner {
+    width: 25%;
+}
+
+.footer-bottom {
+    padding-top: 30px;
+    border-top: 1px solid #ffffff;
+}
+
+.footer-bottom > .container {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-bottom .logo,
+.footer-bottom .btn {
+    padding: 6px 14px;
 }
